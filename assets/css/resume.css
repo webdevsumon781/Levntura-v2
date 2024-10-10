@@ -425,3 +425,12 @@
   margin-top: 10px;
   height: 42px;
 }
+.left_card_image{
+  overflow: hidden;
+}
+.left_card_image img{
+  transition: .3s;
+}
+.apply_content_left_card:hover img{
+  transform: scale(1.2);
+}
