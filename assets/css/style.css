@@ -127,8 +127,9 @@ img {
   object-fit: cover;
 }
 
-button {
-  cursor: pointer;
+button,
+a{
+  cursor: pointer !important;
 }
 
 h1 {
