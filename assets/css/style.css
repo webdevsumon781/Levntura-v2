@@ -62,9 +62,9 @@
   --h4: 20px;
   --h5: 18px;
   --h6: 14px;
-  --text: 15px;
+  --text: 16px;
   --p: 16px;
-  --link: 12px;
+  --link: 16px;
 
   --transition-1: 0.25s ease;
   --transition-2: 0.5s ease;
@@ -509,7 +509,7 @@ header .btn {
   color: var(--white);
   padding-top: 320px;
   padding-bottom: 150px;
-  padding-left: 187px;
+  padding-left: 0;
   margin: 0 auto;
 }
 
@@ -531,7 +531,8 @@ header .btn {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  width: 90%;
+  width: 100%;
+  padding-right: 10px;
 }
 
 .home__top .home-heading {
@@ -560,7 +561,8 @@ header .btn {
 
 .home__down {
   margin-top: 1rem;
-  width: 90%;
+  width: 100%;
+  padding-right: 10px;
 }
 
 .home__down .liner {
@@ -834,7 +836,7 @@ header .btn {
 .title {
   font-size: var(--link);
   position: absolute;
-  left: 2rem;
+  left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -880,7 +882,9 @@ header .btn {
 
 .container .program_title a {
   color: #002d2d;
-  width: 170px;
+  width: 150px;
+  text-align: right;
+  padding-right: 10px;
 }
 
 .container .program_title a i {
@@ -903,8 +907,8 @@ header .btn {
 
 .program_card__image {
   width: 100%;
-  height: 400px;
-  width: 280px;
+  height: 430px;
+  width: 315px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1425,6 +1429,7 @@ header .btn {
   color: #0c0f11;
   margin-top: 16px;
   width: 90%;
+  text-align: left;
 }
 
 .blog_btn {
@@ -1890,6 +1895,7 @@ header .btn {
   flex-direction: column;
   gap: 1rem;
   opacity: 1;
+  margin-bottom: 1rem;
 }
 
 
@@ -2532,7 +2538,6 @@ header .btn {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding-left: 178px;
   padding-top: 7rem;
 }
 
@@ -2608,7 +2613,7 @@ header .btn {
 
 .about_right_img {
   position: absolute;
-  right: 0;
+  right: 10px;
   top: 0;
   width: 693px;
   height: auto;
@@ -2659,7 +2664,7 @@ header .btn {
 }
 
 .education_left {
-  padding-left: 160px;
+  padding-left: 0;
 }
 
 .education_left h2 {
@@ -3309,7 +3314,7 @@ header .btn {
 }
 
 .images_content {
-  width: 90%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3471,12 +3476,11 @@ header .btn {
 }
 
 .contact_left {
-  margin-left: 179px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   align-items: flex-end;
-  justify-content: flex-end;
+  justify-content: flex-start;
   padding-bottom: 5rem;
 }
 
@@ -3497,6 +3501,8 @@ header .btn {
   -ms-flex-direction: column;
   flex-direction: column;
   gap: 1rem;
+  margin-left: 3rem;
+  margin-top: -1rem;
 }
 
 .social_link_top h6 {
@@ -4519,7 +4525,7 @@ input#phoneNumber,
 
 /* --------------------- Programe Container ------------------------ */
 .program_container {
-  max-width: 988px;
+  max-width: 1366px;
   margin: 0 auto;
 }
 
@@ -5575,7 +5581,7 @@ input[type="number"]::placeholder {
 .faq_content {
   padding-top: 8rem;
   padding-bottom: 2rem;
-  max-width: 991px;
+  max-width: 1366px;
 }
 
 .faq-headings {
@@ -5669,6 +5675,7 @@ input[type="number"]::placeholder {
   font-family: var(--gelion-black);
   line-height: 65px;
   color: var(--bg-two);
+  text-align: right;
 }
 
 .main_faq {
@@ -5802,7 +5809,7 @@ input[type="number"]::placeholder {
 }
 
 .world_main {
-  max-width: 1004px;
+  max-width: 1366px;
   padding: 0 1rem;
   margin: 0 auto;
 }
@@ -5864,8 +5871,12 @@ input[type="number"]::placeholder {
 
 .world_content {
   padding-top: 1rem;
+  display: flex;
+  justify-content: center;
 }
-
+.inner_world_content{
+  max-width: 1040px;
+}
 .world_title h1 {
   font-size: 48px;
   font-family: var(--gelion-black);
@@ -6018,11 +6029,12 @@ input[type="number"]::placeholder {
 
 .world_last {
   margin-top: 10rem;
+}
+.sliderArea{
   margin-bottom: 10rem;
 }
-
 .world_last .knowledge__container {
-  width: 140%;
+  /* width: 140%; */
   margin-top: 3rem;
 }
 
@@ -6042,7 +6054,7 @@ input[type="number"]::placeholder {
 }
 
 .world_last .knowledge_heading .large_title h1 {
-  width: 100%;
+  width: 67%;
 }
 
 .world_last .knowledge_heading .small_title {
@@ -6058,7 +6070,7 @@ input[type="number"]::placeholder {
 }
 
 .world_last .knowledge_heading .small_title p {
-  width: 95%;
+  width: 100%;
 }
 
 /* _________________________ All Programs _________________________ */
@@ -6075,7 +6087,7 @@ input[type="number"]::placeholder {
 }
 
 .all_programs_content {
-  max-width: 1028px;
+  max-width: 1366px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6129,9 +6141,12 @@ input[type="number"]::placeholder {
   padding-top: 14rem;
 }
 
-.all_programs_main_container,
 .all_blog_main_container {
   max-width: 1028px;
+  margin: 0 auto;
+}
+.all_programs_main_container {
+  max-width: 1366px;
   margin: 0 auto;
 }
 
@@ -6287,24 +6302,31 @@ input[type="number"]::placeholder {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  gap: 1rem;
+  gap: 2rem;
   row-gap: 3rem;
   margin-bottom: 7rem;
 }
 
 .all_programs_card {
-  max-width: 330px;
-  height: 557px;
+  max-width: 430px;
+  height: 580px;
   background-color: #f5f6f7;
   -webkit-box-shadow: 0px 4px 8px #00000015;
   box-shadow: 0px 4px 8px #00000015;
 }
-
-.all_programs_card .programs_card_img img {
-  height: 254px;
+.all_programs_card .programs_card_img{
+  height: 290px;
   width: 100%;
+  overflow: hidden;
 }
-
+.all_programs_card .programs_card_img img {
+  width: 100%;
+  min-height: 290px;
+  transition: .3s;
+}
+.all_programs_card:hover .programs_card_img img{
+  transform: scale(1.2);
+}
 .programs_card_info {
   padding: 1rem;
   display: -webkit-box;
@@ -6377,6 +6399,10 @@ input[type="number"]::placeholder {
   border: 1px solid var(--about-primary-color);
   color: var(--about-primary-color);
 }
+.program_card_btn .btn_two:hover{
+  color: #fc535c;
+  border-color: #fc535c;
+}
 
 /* ----------------------------- Join Our Team Page ----------------------------- */
 .join_team_main {
@@ -6395,8 +6421,8 @@ input[type="number"]::placeholder {
   -ms-flex-pack: center;
   justify-content: center;
   height: 820px;
-  max-width: 1154px;
-  padding: 0 2rem;
+  max-width: 1366px;
+  padding: 0 0rem;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -6446,7 +6472,7 @@ input[type="number"]::placeholder {
 }
 
 .top_content .right_part .top_img img {
-  margin-left: 3.5rem;
+  margin-left: .2rem;
 }
 
 .top_content .right_part .bottom_img {
@@ -6454,7 +6480,7 @@ input[type="number"]::placeholder {
   display: -ms-flexbox;
   display: flex;
   gap: 1rem;
-  margin-left: -1rem;
+  margin-left: -8.7rem;
 }
 
 /* ---------------------- Apply Section------------------------ */
@@ -6733,14 +6759,14 @@ input[type="number"]::placeholder {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  gap: 1rem;
+  gap: 2rem;
   padding-top: 4rem;
   padding-bottom: 10rem;
   margin-top: -1rem;
 }
 
 .releted_card__container .card__article {
-  max-width: 300px;
+  max-width: 315px;
 }
 
 .releted_program_main .releted_card__container .card__article {
@@ -7789,4 +7815,54 @@ button#openFormButton:hover{
 }
 .join_team_footer {
   z-index: 500;
+}
+
+
+.all_programs_footer .email_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.all_programs_footer .mail_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 10px;
+  height: 45px;
+  border: 1px solid #ccc;
+  width: 225px;
+  outline: none;
+}
+.all_programs_footer .mail_box input{
+  padding: 10px;
+  height: 45px;
+  font-size: 14px;
+  width: 225px;
+  outline: none;
+  color: #fff !important;
+}
+.all_programs_footer .mail_box input::placeholder{
+  color: #fff !important;
+  opacity: .5 !important;
+}
+.all_programs_footer .newsletter-form .mail-logo img {
+  width: 15px;
+  position: absolute;
+  right: 12px;
+  top: 15px;
+}
+.all_programs_footer button {
+  height: 45px !important;
+  padding: 10px 20px !important;
+  border: 1px solid #ccc !important;
+  font-size: 15px !important;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+.mail_box input{
+  font-size: 14px !important;
 }

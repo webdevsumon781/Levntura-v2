@@ -511,12 +511,20 @@ const videos = document.querySelectorAll('.videoElement');
 
 // Loop through each video and add the click event listener
 videos.forEach((video) => {
-  video.addEventListener('click', () => {
+  video.addEventListener('mouseover', () => {
     // Check if the video is playing
     if (video.paused) {
       video.muted = false; // Unmute the video
       video.play(); // Play the video
     } else {
+      video.pause(); // Pause the video
+      video.muted = true; // Mute the video
+    }
+  });
+
+  video.addEventListener('mouseout', () => {
+    // Check if the video is playing
+    if (video.play) {
       video.pause(); // Pause the video
       video.muted = true; // Mute the video
     }
@@ -646,11 +654,11 @@ let programThreeCards = new Swiper(".programs_three_card", {
     },
 
     1250: {
-      slidesPerView: 2.9,
+      slidesPerView: 3.9,
     },
 
     1350: {
-      slidesPerView: 4.5,
+      slidesPerView: 5.5,
     },
   },
 });
@@ -707,7 +715,7 @@ let programFourCards = new Swiper(".programs_four_card", {
     },
 
     1350: {
-      slidesPerView: 2.9,
+      slidesPerView: 4.3,
     },
   },
 });
@@ -755,11 +763,11 @@ let programFiveCards = new Swiper(".programs_five_card", {
     },
 
     1100: {
-      slidesPerView: 2.7,
+      slidesPerView: 2.5,
     },
 
     1160: {
-      slidesPerView: 1.4,
+      slidesPerView: 2.7,
     },
 
     1250: {
@@ -767,7 +775,7 @@ let programFiveCards = new Swiper(".programs_five_card", {
     },
 
     1350: {
-      slidesPerView: 2.9,
+      slidesPerView: 4.2,
     },
   },
 });
@@ -826,7 +834,7 @@ let programSevenCards = new Swiper(".programs_seven_card", {
     },
 
     1350: {
-      slidesPerView: 4.5,
+      slidesPerView: 6.4,
     },
   },
 });
